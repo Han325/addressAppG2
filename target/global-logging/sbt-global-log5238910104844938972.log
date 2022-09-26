@@ -1,0 +1,7 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(eeae5bec-1768-4d0b-adcf-6e078bd125fd), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to C:\Users\yuhan\Documents\Active Code Repos\addressAppG2\target\scala-2.12\classes ...[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 27 s, completed Sep 26, 2022 2:01:01 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[31merror[0m] [0m[0mserver failed to start on local:sbt-server-e24fd05fd96a76583fe0. java.io.IOException: Could not create lock for \\.\pipe\sbt-server-e24fd05fd96a76583fe0_lock, error 5[0m

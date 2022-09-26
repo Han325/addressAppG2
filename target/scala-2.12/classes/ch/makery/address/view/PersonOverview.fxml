@@ -11,17 +11,16 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 
-
-<AnchorPane prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.PersonOverviewController">
    <children>
       <SplitPane dividerPositions="0.3377926421404682" prefHeight="300.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
             <AnchorPane prefHeight="200.0" prefWidth="200.0">
                <children>
-                  <TableView layoutX="-14.0" layoutY="31.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <TableView fx:id="personTable" layoutX="-14.0" layoutY="31.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <columns>
-                      <TableColumn prefWidth="75.0" text="First Name" />
-                      <TableColumn prefWidth="75.0" text="Last Name" />
+                      <TableColumn fx:id="firstNameColumn" prefWidth="75.0" text="First Name" />
+                      <TableColumn fx:id="lastNameColumn" prefWidth="75.0" text="Last Name" />
                     </columns>
                      <columnResizePolicy>
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -52,12 +51,12 @@
                         <Label layoutX="10.0" layoutY="77.0" text="City" GridPane.rowIndex="3" />
                         <Label layoutX="10.0" layoutY="107.0" text="Postal Code" GridPane.rowIndex="4" />
                         <Label layoutX="10.0" layoutY="137.0" text="Birthday" GridPane.rowIndex="5" />
-                        <Label text="Label" GridPane.columnIndex="1" />
-                        <Label layoutX="202.0" layoutY="17.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Label layoutX="202.0" layoutY="47.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                        <Label layoutX="202.0" layoutY="77.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                        <Label layoutX="202.0" layoutY="107.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                        <Label layoutX="202.0" layoutY="137.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label fx:id="firstNameLabel" text="Label" GridPane.columnIndex="1" />
+                        <Label fx:id="lastNameLabel" layoutX="202.0" layoutY="17.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="streetLabel" layoutX="202.0" layoutY="47.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="postalCodeLabel" layoutX="202.0" layoutY="77.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="cityLabel" layoutX="202.0" layoutY="107.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label fx:id="birthdayLabel" layoutX="202.0" layoutY="137.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
                      </children>
                   </GridPane>
                   <HBox layoutX="231.0" layoutY="257.0" prefHeight="27.0" prefWidth="148.0" spacing="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">

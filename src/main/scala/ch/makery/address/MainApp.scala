@@ -5,6 +5,8 @@ import scalafx.scene.Scene
 import scalafx.Includes._
 import scalafxml.core.{NoDependencyResolver, FXMLView, FXMLLoader}
 import javafx.{scene => jfxs}
+import scalafx.collections.ObservableBuffer
+import ch.makery.address.model.Person
 
 object MainApp extends JFXApp {
 
