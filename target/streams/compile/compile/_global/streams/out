@@ -1,0 +1,19 @@
+[0m[[0m[31merror[0m] [0m[0mD:\Active Code Repos\OOP\addressAppG2\src\main\scala\ch\makery\address\MainApp.scala:62:40: not found: type PersonEditDialogController[0m
+[0m[[0m[31merror[0m] [0m[0m    val control = loader.getController[PersonEditDialogController#Controller][0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Active Code Repos\OOP\addressAppG2\src\main\scala\ch\makery\address\MainApp.scala:64:22: not found: type Stage[0m
+[0m[[0m[31merror[0m] [0m[0m    val dialog = new Stage() {[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Active Code Repos\OOP\addressAppG2\src\main\scala\ch\makery\address\MainApp.scala:65:7: not found: value initModality[0m
+[0m[[0m[31merror[0m] [0m[0m      initModality(Modality.APPLICATION_MODAL)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Active Code Repos\OOP\addressAppG2\src\main\scala\ch\makery\address\MainApp.scala:65:20: not found: value Modality[0m
+[0m[[0m[31merror[0m] [0m[0m      initModality(Modality.APPLICATION_MODAL)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Active Code Repos\OOP\addressAppG2\src\main\scala\ch\makery\address\MainApp.scala:66:7: not found: value initOwner[0m
+[0m[[0m[31merror[0m] [0m[0m      initOwner(stage)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Active Code Repos\OOP\addressAppG2\src\main\scala\ch\makery\address\MainApp.scala:67:7: not found: value scene[0m
+[0m[[0m[31merror[0m] [0m[0m      scene = new Scene {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m6 errors found[0m

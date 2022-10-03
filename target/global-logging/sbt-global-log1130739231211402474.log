@@ -1,0 +1,27 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(6f41352d-42a4-47de-b5a3-b55cde00608a), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources to D:\Active Code Repos\OOP\addressAppG2\target\scala-2.12\classes ...[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Active Code Repos\OOP\addressAppG2\src\main\scala\ch\makery\address\MainApp.scala:62:40: not found: type PersonEditDialogController[0m
+[0m[[0m[31merror[0m] [0m[0m    val control = loader.getController[PersonEditDialogController#Controller][0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Active Code Repos\OOP\addressAppG2\src\main\scala\ch\makery\address\MainApp.scala:64:22: not found: type Stage[0m
+[0m[[0m[31merror[0m] [0m[0m    val dialog = new Stage() {[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Active Code Repos\OOP\addressAppG2\src\main\scala\ch\makery\address\MainApp.scala:65:7: not found: value initModality[0m
+[0m[[0m[31merror[0m] [0m[0m      initModality(Modality.APPLICATION_MODAL)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Active Code Repos\OOP\addressAppG2\src\main\scala\ch\makery\address\MainApp.scala:65:20: not found: value Modality[0m
+[0m[[0m[31merror[0m] [0m[0m      initModality(Modality.APPLICATION_MODAL)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Active Code Repos\OOP\addressAppG2\src\main\scala\ch\makery\address\MainApp.scala:66:7: not found: value initOwner[0m
+[0m[[0m[31merror[0m] [0m[0m      initOwner(stage)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Active Code Repos\OOP\addressAppG2\src\main\scala\ch\makery\address\MainApp.scala:67:7: not found: value scene[0m
+[0m[[0m[31merror[0m] [0m[0m      scene = new Scene {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m6 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 0 s, completed Oct 3, 2022 9:18:31 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m

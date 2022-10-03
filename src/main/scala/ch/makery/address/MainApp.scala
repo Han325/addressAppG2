@@ -53,4 +53,26 @@ object MainApp extends JFXApp {
   }
   // call to display PersonOverview when app start
   showPersonOverview()
+
+  def showPersonEditDialog(person: Person): Boolean = {
+    val resource = getClass.getResourceAsStream("view/PersonEditDialog.fxml")
+    val loader = new FXMLLoader(null, NoDependencyResolver)
+    loader.load(resource);
+    val roots2  = loader.getRoot[jfxs.Parent]
+    val control = loader.getController[PersonEditDialogController#Controller]
+
+    val dialog = new Stage() {
+      initModality(Modality.APPLICATION_MODAL)
+      initOwner(stage)
+      scene = new Scene {
+        root = roots2
+      }
+    }
+    control.dialogStage = dialog
+    control.person = person
+    dialog.showAndWait()
+    control.okClicked
+    true
+  } 
+
 }
