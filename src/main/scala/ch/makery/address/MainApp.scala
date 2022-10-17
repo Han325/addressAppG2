@@ -1,21 +1,19 @@
 package ch.makery.address
+
 import scalafx.application.JFXApp
 import scalafx.application.JFXApp.PrimaryStage
 import scalafx.scene.Scene
 import scalafx.Includes._
 import scalafxml.core.{NoDependencyResolver, FXMLView, FXMLLoader}
 import javafx.{scene => jfxs}
-import scalafx.collections.ObservableBuffer
+import scalafx.collections.{ObservableBuffer}
 import ch.makery.address.model.Person
+import ch.makery.address.view.PersonEditDialogController
+import scalafx.stage.{Stage, Modality}
 
 object MainApp extends JFXApp {
-
-  /** The data as an observable list of Persons.
-    */
+  // the data as an observable list of Persons
   val personData = new ObservableBuffer[Person]()
-
-  /** Constructor
-    */
   personData += new Person("Hans", "Muster")
   personData += new Person("Ruth", "Mueller")
   personData += new Person("Heinz", "Kurz")
@@ -26,14 +24,12 @@ object MainApp extends JFXApp {
   personData += new Person("Stefan", "Meier")
   personData += new Person("Martin", "Mueller")
 
-  // ... THE REST OF THE CLASS ...
-
   // transform path of RootLayout.fxml to URI for resource location.
-  val rootResource = getClass.getResource("view/RootLayout.fxml")
+  val rootResource = getClass.getResourceAsStream("view/RootLayout.fxml")
   // initialize the loader object.
-  val loader = new FXMLLoader(rootResource, NoDependencyResolver)
+  val loader = new FXMLLoader(null, NoDependencyResolver)
   // Load root layout from fxml file.
-  loader.load();
+  loader.load(rootResource);
   // retrieve the root component BorderPane from the FXML
   val roots = loader.getRoot[jfxs.layout.BorderPane]
   // initialize stage
@@ -45,20 +41,18 @@ object MainApp extends JFXApp {
   }
   // actions for display person overview window
   def showPersonOverview() = {
-    val resource = getClass.getResource("view/PersonOverview.fxml")
-    val loader = new FXMLLoader(resource, NoDependencyResolver)
-    loader.load();
+    val resource = getClass.getResourceAsStream("view/PersonOverview.fxml")
+    val loader = new FXMLLoader(null, NoDependencyResolver)
+    loader.load(resource);
     val roots = loader.getRoot[jfxs.layout.AnchorPane]
     this.roots.setCenter(roots)
   }
-  // call to display PersonOverview when app start
-  showPersonOverview()
 
   def showPersonEditDialog(person: Person): Boolean = {
     val resource = getClass.getResourceAsStream("view/PersonEditDialog.fxml")
     val loader = new FXMLLoader(null, NoDependencyResolver)
     loader.load(resource);
-    val roots2  = loader.getRoot[jfxs.Parent]
+    val roots2 = loader.getRoot[jfxs.Parent]
     val control = loader.getController[PersonEditDialogController#Controller]
 
     val dialog = new Stage() {
@@ -72,7 +66,7 @@ object MainApp extends JFXApp {
     control.person = person
     dialog.showAndWait()
     control.okClicked
-    true
-  } 
-
+  }
+  // call to display PersonOverview when app start
+  showPersonOverview()
 }

@@ -9,7 +9,6 @@ import ch.makery.address.util.DateUtil._
 import scalafx.Includes._
 import scalafx.event.ActionEvent
 
-
 @sfxml
 class PersonOverviewController(
     private val personTable: TableView[Person],
@@ -45,7 +44,6 @@ class PersonOverviewController(
         cityLabel.text <== person.city;
         postalCodeLabel.text = person.postalCode.value.toString
         birthdayLabel.text = person.date.value.asString
-
       case None =>
         // Person is null, remove all the text.
         firstNameLabel.text = ""
@@ -56,46 +54,35 @@ class PersonOverviewController(
         birthdayLabel.text = ""
     }
   }
-
-  def handleNewPerson(action : ActionEvent) = {
-    val person = new Person("","")
+  def handleNewPerson(action: ActionEvent) = {
+    val person = new Person("", "")
     val okClicked = MainApp.showPersonEditDialog(person);
-        if (okClicked) {
-            MainApp.personData += person
-        }
+    if (okClicked) {
+      MainApp.personData += person
+    }
   }
-  def handleEditPerson(action : ActionEvent) = {
+  def handleEditPerson(action: ActionEvent) = {
     val selectedPerson = personTable.selectionModel().selectedItem.value
     if (selectedPerson != null) {
-        val okClicked = MainApp.showPersonEditDialog(selectedPerson)
+      val okClicked = MainApp.showPersonEditDialog(selectedPerson)
 
-        if (okClicked) showPersonDetails(Some(selectedPerson))
+      if (okClicked) showPersonDetails(Some(selectedPerson))
 
     } else {
-        // Nothing selected.
-        val alert = new Alert(Alert.AlertType.Warning){
-          initOwner(MainApp.stage)
-          title       = "No Selection"
-          headerText  = "No Person Selected"
-          contentText = "Please select a person in the table."
-        }.showAndWait()
+      // Nothing selected.
+      val alert = new Alert(Alert.AlertType.Warning) {
+        initOwner(MainApp.stage)
+        title = "No Selection"
+        headerText = "No Person Selected"
+        contentText = "Please select a person in the table."
+      }.showAndWait()
     }
   }
-
-  def handleDeletePerson(action : ActionEvent) = {
-      val selectedIndex = personTable.selectionModel().selectedIndex.value
-      if (selectedIndex >= 0) {
-          personTable.items().remove(selectedIndex);
-      } else {
-        // Nothing selected.
-        val alert = new Alert(Alert.AlertType.Warning){
-          initOwner(MainApp.stage)
-          title       = "No Selection"
-          headerText  = "No Person Selected"
-          contentText = "Please select a person in the table."
-        }.showAndWait()
+  def handleDeletePerson(action: ActionEvent) = {
+    val selectedIndex = personTable.selectionModel().selectedIndex.value
+    if (selectedIndex >= 0) {
+      personTable.items().remove(selectedIndex);
     }
-
-   } 
+  }
 
 }

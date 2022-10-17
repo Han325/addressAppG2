@@ -10,54 +10,52 @@ import ch.makery.address.util.DateUtil._
 import scalafx.event.ActionEvent
 
 @sfxml
-class PersonEditDialogController (
-
-    private val  firstNameField : TextField,
-    private val   lastNameField : TextField,
-    private val     streetField : TextField,
-    private val postalCodeField : TextField,
-    private val       cityField : TextField,
-    private val   birthdayField : TextField
-
-){
-  var         dialogStage : Stage  = null
-  private var _person     : Person = null
-  var         okClicked            = false
+class PersonEditDialogController(
+    private val firstNameField: TextField,
+    private val lastNameField: TextField,
+    private val streetField: TextField,
+    private val postalCodeField: TextField,
+    private val cityField: TextField,
+    private val birthdayField: TextField
+) {
+  var dialogStage: Stage = null
+  private var _person: Person = null
+  var okClicked = false
 
   def person = _person
-  def person_=(x : Person) {
-        _person = x
+  def person_=(x: Person) {
+    _person = x
 
-        firstNameField.text = _person.firstName.value
-        lastNameField.text  = _person.lastName.value
-        streetField.text    = _person.street.value
-        postalCodeField.text= _person.postalCode.value.toString
-        cityField.text      = _person.city.value
-        birthdayField.text  = _person.date.value.asString
-        birthdayField.setPromptText("dd.mm.yyyy");
+    firstNameField.text = _person.firstName.value
+    lastNameField.text = _person.lastName.value
+    streetField.text = _person.street.value
+    postalCodeField.text = _person.postalCode.value.toString
+    cityField.text = _person.city.value
+    birthdayField.text = _person.date.value.asString
+    birthdayField.setPromptText("dd.mm.yyyy");
   }
 
-  def handleOk(action :ActionEvent){
+  def handleOk(action: ActionEvent) {
 
-     if (isInputValid()) {
-        _person.firstName <== firstNameField.text
-        _person.lastName  <== lastNameField.text
-        _person.street    <== streetField.text
-        _person.city      <== cityField.text
-        _person.postalCode.value = postalCodeField.getText().toInt
-        _person.date.value       = birthdayField.text.value.parseLocalDate;
+    if (isInputValid()) {
+      _person.firstName <== firstNameField.text
+      _person.lastName <== lastNameField.text
+      _person.street <== streetField.text
+      _person.city <== cityField.text
+      _person.postalCode.value = postalCodeField.getText().toInt
+      _person.date.value = birthdayField.text.value.parseLocalDate;
 
-        okClicked = true;
-        dialogStage.close()
+      okClicked = true;
+      dialogStage.close()
     }
   }
 
-  def handleCancel(action :ActionEvent) {
-        dialogStage.close();
+  def handleCancel(action: ActionEvent) {
+    dialogStage.close();
   }
-  def nullChecking (x : String) = x == null || x.length == 0
+  def nullChecking(x: String) = x == null || x.length == 0
 
-  def isInputValid() : Boolean = {
+  def isInputValid(): Boolean = {
     var errorMessage = ""
 
     if (nullChecking(firstNameField.text.value))
@@ -72,8 +70,8 @@ class PersonEditDialogController (
       try {
         Integer.parseInt(postalCodeField.getText());
       } catch {
-          case e : NumberFormatException =>
-            errorMessage += "No valid postal code (must be an integer)!\n"
+        case e: NumberFormatException =>
+          errorMessage += "No valid postal code (must be an integer)!\n"
       }
     }
     if (nullChecking(cityField.text.value))
@@ -82,22 +80,22 @@ class PersonEditDialogController (
       errorMessage += "No valid birtday!\n"
     else {
       if (!birthdayField.text.value.isValid) {
-          errorMessage += "No valid birthday. Use the format dd.mm.yyyy!\n";
+        errorMessage += "No valid birthday. Use the format dd.mm.yyyy!\n";
       }
     }
 
     if (errorMessage.length() == 0) {
-        return true;
+      return true;
     } else {
-        // Show the error message.
-        val alert = new Alert(Alert.AlertType.Error){
-          initOwner(dialogStage)
-          title = "Invalid Fields"
-          headerText = "Please correct invalid fields"
-          contentText = errorMessage
-        }.showAndWait()
+      // Show the error message.
+      val alert = new Alert(Alert.AlertType.Error) {
+        initOwner(dialogStage)
+        title = "Invalid Fields"
+        headerText = "Please correct invalid fields"
+        contentText = errorMessage
+      }.showAndWait()
 
-        return false;
+      return false;
     }
-   }
+  }
 }
