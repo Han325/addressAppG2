@@ -4,12 +4,13 @@ import scalafx.application.JFXApp
 import scalafx.application.JFXApp.PrimaryStage
 import scalafx.scene.Scene
 import scalafx.Includes._
-import scalafxml.core.{NoDependencyResolver, FXMLView, FXMLLoader}
+import scalafxml.core.{FXMLLoader, FXMLView, NoDependencyResolver}
 import javafx.{scene => jfxs}
-import scalafx.collections.{ObservableBuffer}
+import scalafx.collections.ObservableBuffer
 import ch.makery.address.model.Person
 import ch.makery.address.view.PersonEditDialogController
-import scalafx.stage.{Stage, Modality}
+import scalafx.scene.image.Image
+import scalafx.stage.{Modality, Stage}
 
 object MainApp extends JFXApp {
   // the data as an observable list of Persons
@@ -35,7 +36,10 @@ object MainApp extends JFXApp {
   // initialize stage
   stage = new PrimaryStage {
     title = "AddressApp"
+    icons += new Image(getClass().getResourceAsStream("/images/address_book_32.png"))
+
     scene = new Scene {
+      stylesheets = List(getClass.getResource("view/DarkTheme.css").toString())
       root = roots
     }
   }
@@ -59,6 +63,7 @@ object MainApp extends JFXApp {
       initModality(Modality.APPLICATION_MODAL)
       initOwner(stage)
       scene = new Scene {
+        stylesheets = List(getClass.getResource("view/DarkTheme.css").toString())
         root = roots2
       }
     }

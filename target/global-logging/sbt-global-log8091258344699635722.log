@@ -1,0 +1,119 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(d7a49f67-0599-472c-90d9-1fe6a46b9b9f), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources to /Users/han/Documents/addressAppG2/addressAppG2/target/scala-2.12/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/han/Documents/addressAppG2/addressAppG2/src/main/scala/ch/makery/address/MainApp.scala:8:8: not found: object javafx[0m
+[0m[[0m[31merror[0m] [0m[0mimport javafx.{scene => jfxs}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/han/Documents/addressAppG2/addressAppG2/src/main/scala/ch/makery/address/MainApp.scala:16:24: Symbol 'type javafx.collections.ObservableList' is missing from the classpath.[0m
+[0m[[0m[31merror[0m] [0m[0mThis symbol is required by 'class scalafx.collections.ObservableBuffer'.[0m
+[0m[[0m[31merror[0m] [0m[0mMake sure that type ObservableList is in your classpath and check for conflicting dependencies with `-Ylog-classpath`.[0m
+[0m[[0m[31merror[0m] [0m[0mA full rebuild may help if 'ObservableBuffer.class' was compiled against an incompatible version of javafx.collections.[0m
+[0m[[0m[31merror[0m] [0m[0m  val personData = new ObservableBuffer[Person]()[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/han/Documents/addressAppG2/addressAppG2/src/main/scala/ch/makery/address/MainApp.scala:30:20: Symbol 'type javafx.fxml.FXMLLoader' is missing from the classpath.[0m
+[0m[[0m[31merror[0m] [0m[0mThis symbol is required by 'class scalafxml.core.FXMLLoader'.[0m
+[0m[[0m[31merror[0m] [0m[0mMake sure that type FXMLLoader is in your classpath and check for conflicting dependencies with `-Ylog-classpath`.[0m
+[0m[[0m[31merror[0m] [0m[0mA full rebuild may help if 'FXMLLoader.class' was compiled against an incompatible version of javafx.fxml.[0m
+[0m[[0m[31merror[0m] [0m[0m  val loader = new FXMLLoader(null, NoDependencyResolver)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/han/Documents/addressAppG2/addressAppG2/src/main/scala/ch/makery/address/MainApp.scala:32:10: value load is not a member of scalafxml.core.FXMLLoader[0m
+[0m[[0m[31merror[0m] [0m[0m  loader.load(rootResource);[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/han/Documents/addressAppG2/addressAppG2/src/main/scala/ch/makery/address/MainApp.scala:34:22: value getRoot is not a member of scalafxml.core.FXMLLoader[0m
+[0m[[0m[31merror[0m] [0m[0m  val roots = loader.getRoot[jfxs.layout.BorderPane][0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/han/Documents/addressAppG2/addressAppG2/src/main/scala/ch/makery/address/MainApp.scala:34:30: not found: value jfxs[0m
+[0m[[0m[31merror[0m] [0m[0m  val roots = loader.getRoot[jfxs.layout.BorderPane][0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/han/Documents/addressAppG2/addressAppG2/src/main/scala/ch/makery/address/MainApp.scala:32:3: Symbol 'type javafx.event.EventTarget' is missing from the classpath.[0m
+[0m[[0m[31merror[0m] [0m[0mThis symbol is required by 'class scalafx.stage.Window'.[0m
+[0m[[0m[31merror[0m] [0m[0mMake sure that type EventTarget is in your classpath and check for conflicting dependencies with `-Ylog-classpath`.[0m
+[0m[[0m[31merror[0m] [0m[0mA full rebuild may help if 'Window.class' was compiled against an incompatible version of javafx.event.[0m
+[0m[[0m[31merror[0m] [0m[0m  loader.load(rootResource);[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/han/Documents/addressAppG2/addressAppG2/src/main/scala/ch/makery/address/MainApp.scala:46:12: value load is not a member of scalafxml.core.FXMLLoader[0m
+[0m[[0m[31merror[0m] [0m[0m    loader.load(resource);[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/han/Documents/addressAppG2/addressAppG2/src/main/scala/ch/makery/address/MainApp.scala:47:24: value getRoot is not a member of scalafxml.core.FXMLLoader[0m
+[0m[[0m[31merror[0m] [0m[0m    val roots = loader.getRoot[jfxs.layout.AnchorPane][0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/han/Documents/addressAppG2/addressAppG2/src/main/scala/ch/makery/address/MainApp.scala:47:32: not found: value jfxs[0m
+[0m[[0m[31merror[0m] [0m[0m    val roots = loader.getRoot[jfxs.layout.AnchorPane][0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/han/Documents/addressAppG2/addressAppG2/src/main/scala/ch/makery/address/MainApp.scala:54:12: value load is not a member of scalafxml.core.FXMLLoader[0m
+[0m[[0m[31merror[0m] [0m[0m    loader.load(resource);[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/han/Documents/addressAppG2/addressAppG2/src/main/scala/ch/makery/address/MainApp.scala:55:25: value getRoot is not a member of scalafxml.core.FXMLLoader[0m
+[0m[[0m[31merror[0m] [0m[0m    val roots2 = loader.getRoot[jfxs.Parent][0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/han/Documents/addressAppG2/addressAppG2/src/main/scala/ch/makery/address/MainApp.scala:55:33: not found: value jfxs[0m
+[0m[[0m[31merror[0m] [0m[0m    val roots2 = loader.getRoot[jfxs.Parent][0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/han/Documents/addressAppG2/addressAppG2/src/main/scala/ch/makery/address/view/PersonEditDialogController.scala:12:2: exception during macro expansion: [0m
+[0m[[0m[31merror[0m] [0m[0mscala.ScalaReflectionException: object javafx.scene.control.TextField in compiler mirror not found.[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.internal.Mirrors$RootsBase.staticClass(Mirrors.scala:141)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.internal.Mirrors$RootsBase.staticClass(Mirrors.scala:29)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scalafxml.core.macros.sfxmlMacro$.determineInputType$1(sfxmlMacro.scala:119)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scalafxml.core.macros.sfxmlMacro$.$anonfun$impl$8(sfxmlMacro.scala:165)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.map(List.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scalafxml.core.macros.sfxmlMacro$.impl(sfxmlMacro.scala:163)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.reflect.Method.invoke(Method.java:578)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.macros.runtime.JavaReflectionRuntimes$JavaReflectionResolvers.$anonfun$resolveJavaReflectionRuntime$6(JavaReflectionRuntimes.scala:51)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.typechecker.Macros.macroExpandWithRuntime(Macros.scala:849)[0m
+[0m[[0m[31merror[0m] [0m[0m@sfxml[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/han/Documents/addressAppG2/addressAppG2/src/main/scala/ch/makery/address/MainApp.scala:56:67: type Controller is not a member of ch.makery.address.view.PersonEditDialogController[0m
+[0m[[0m[31merror[0m] [0m[0m    val control = loader.getController[PersonEditDialogController#Controller][0m
+[0m[[0m[31merror[0m] [0m[0m                                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/han/Documents/addressAppG2/addressAppG2/src/main/scala/ch/makery/address/MainApp.scala:58:22: Symbol 'type javafx.stage.StageStyle' is missing from the classpath.[0m
+[0m[[0m[31merror[0m] [0m[0mThis symbol is required by 'value scalafx.stage.Stage.style'.[0m
+[0m[[0m[31merror[0m] [0m[0mMake sure that type StageStyle is in your classpath and check for conflicting dependencies with `-Ylog-classpath`.[0m
+[0m[[0m[31merror[0m] [0m[0mA full rebuild may help if 'Stage.class' was compiled against an incompatible version of javafx.stage.[0m
+[0m[[0m[31merror[0m] [0m[0m    val dialog = new Stage() {[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/han/Documents/addressAppG2/addressAppG2/src/main/scala/ch/makery/address/view/PersonEditDialogController.scala:35:19: value setPromptText is not a member of scalafx.scene.control.TextField[0m
+[0m[[0m[31merror[0m] [0m[0m    birthdayField.setPromptText("dd.mm.yyyy");[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/han/Documents/addressAppG2/addressAppG2/src/main/scala/ch/makery/address/view/PersonEditDialogController.scala:45:50: value getText is not a member of scalafx.scene.control.TextField[0m
+[0m[[0m[31merror[0m] [0m[0m      _person.postalCode.value = postalCodeField.getText().toInt[0m
+[0m[[0m[31merror[0m] [0m[0m                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/han/Documents/addressAppG2/addressAppG2/src/main/scala/ch/makery/address/view/PersonEditDialogController.scala:71:42: value getText is not a member of scalafx.scene.control.TextField[0m
+[0m[[0m[31merror[0m] [0m[0m        Integer.parseInt(postalCodeField.getText());[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/han/Documents/addressAppG2/addressAppG2/src/main/scala/ch/makery/address/view/PersonOverviewController.scala:12:2: exception during macro expansion: [0m
+[0m[[0m[31merror[0m] [0m[0mscala.ScalaReflectionException: object javafx.scene.control.TableView in compiler mirror not found.[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.internal.Mirrors$RootsBase.staticClass(Mirrors.scala:141)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.internal.Mirrors$RootsBase.staticClass(Mirrors.scala:29)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scalafxml.core.macros.sfxmlMacro$.determineInputType$1(sfxmlMacro.scala:119)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scalafxml.core.macros.sfxmlMacro$.$anonfun$impl$8(sfxmlMacro.scala:165)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.map(List.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scalafxml.core.macros.sfxmlMacro$.impl(sfxmlMacro.scala:163)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.reflect.Method.invoke(Method.java:578)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.macros.runtime.JavaReflectionRuntimes$JavaReflectionResolvers.$anonfun$resolveJavaReflectionRuntime$6(JavaReflectionRuntimes.scala:51)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.typechecker.Macros.macroExpandWithRuntime(Macros.scala:849)[0m
+[0m[[0m[31merror[0m] [0m[0m@sfxml[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/han/Documents/addressAppG2/addressAppG2/src/main/scala/ch/makery/address/view/PersonOverviewController.scala:32:3: Symbol 'type javafx.scene.control.TableView.TableViewSelectionModel' is missing from the classpath.[0m
+[0m[[0m[31merror[0m] [0m[0mThis symbol is required by 'method scalafx.scene.control.TableView.selectionModel'.[0m
+[0m[[0m[31merror[0m] [0m[0mMake sure that type TableViewSelectionModel is in your classpath and check for conflicting dependencies with `-Ylog-classpath`.[0m
+[0m[[0m[31merror[0m] [0m[0mA full rebuild may help if 'TableView.class' was compiled against an incompatible version of javafx.scene.control.TableView.[0m
+[0m[[0m[31merror[0m] [0m[0m  personTable[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/han/Documents/addressAppG2/addressAppG2/src/main/scala/ch/makery/address/view/PersonOverviewController.scala:25:3: Symbol 'type javafx.beans.property.ObjectProperty' is missing from the classpath.[0m
+[0m[[0m[31merror[0m] [0m[0mThis symbol is required by 'method scalafx.scene.control.TableView.items'.[0m
+[0m[[0m[31merror[0m] [0m[0mMake sure that type ObjectProperty is in your classpath and check for conflicting dependencies with `-Ylog-classpath`.[0m
+[0m[[0m[31merror[0m] [0m[0mA full rebuild may help if 'TableView.class' was compiled against an incompatible version of javafx.beans.property.[0m
+[0m[[0m[31merror[0m] [0m[0m  personTable.items = MainApp.personData[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/han/Documents/addressAppG2/addressAppG2/src/main/scala/ch/makery/address/view/PersonOverviewController.scala:84:24: javafx.beans.property.ObjectProperty[javafx.collections.ObservableList[ch.makery.address.model.Person]] does not take parameters[0m
+[0m[[0m[31merror[0m] [0m[0m      personTable.items().remove(selectedIndex);[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m23 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 0 s, completed 20 Oct 2022, 10:00:37 pm[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

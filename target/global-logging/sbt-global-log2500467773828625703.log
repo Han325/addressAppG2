@@ -1,0 +1,88 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.7.1 (AdoptOpenJDK Java 1.8.0_292)
+[debug] Load.defaultLoad until apply took 89.453958ms
+[debug]           Load.loadUnit: plugins took 125.836625ms
+[debug]           Load.loadUnit: defsScala took 0.90175ms
+[debug] [Loading] Scanning directory /Users/han/Documents/addressAppG2/addressAppG2/project
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /Users/han/Documents/addressAppG2/addressAppG2/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 27.776125 ms
+[debug]               Load.resolveProject(addressappg2-build) took 44.760833ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id addressappg2-build, base: /Users/han/Documents/addressAppG2/addressAppG2/project, plugins: List(<none>))) took 99.483458ms
+[debug] [Loading] Done in /Users/han/Documents/addressAppG2/addressAppG2/project, returning: (addressappg2-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 151.613333ms
+[debug]           Load.loadUnit: cleanEvalClasses took 0.410834ms
+[debug]         Load.loadUnit(file:/Users/han/Documents/addressAppG2/addressAppG2/project/, ...) took 291.33275ms
+[debug]       Load.apply: load took 763.494125ms
+[debug]       Load.apply: resolveProjects took 6.303333ms
+[debug]       Load.apply: finalTransforms took 113.9105ms
+[debug]       Load.apply: config.delegates took 6.599ms
+[debug]       Load.apply: Def.make(settings)... took 1111.914791ms
+[debug]       Load.apply: structureIndex took 237.143083ms
+[debug]       Load.apply: mkStreams took 0.976917ms
+[info] loading project definition from /Users/han/Documents/addressAppG2/addressAppG2/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 3529.876542ms
+[debug]     Load.loadUnit: defsScala took 0.004166ms
+[debug] [Loading] Scanning directory /Users/han/Documents/addressAppG2/addressAppG2
+[debug]       Load.loadUnit: mkEval took 10.918417ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /Users/han/Documents/addressAppG2/addressAppG2, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 6.380292 ms
+[info] loading settings for project addressappg2 from build.sbt ...
+[debug]         Load.resolveProject(addressappg2) took 8.9275ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id addressappg2, base: /Users/han/Documents/addressAppG2/addressAppG2, plugins: List(<none>))) took 16.867292ms
+[debug] [Loading] Done in /Users/han/Documents/addressAppG2/addressAppG2, returning: (addressappg2)
+[debug]     Load.loadUnit: loadedProjectsRaw took 245.666959ms
+[debug]     Load.loadUnit: cleanEvalClasses took 5.655833ms
+[debug]   Load.loadUnit(file:/Users/han/Documents/addressAppG2/addressAppG2/, ...) took 3785.134833ms
+[debug] Load.apply: load took 3812.278541ms
+[debug] Load.apply: resolveProjects took 0.272209ms
+[debug] Load.apply: finalTransforms took 67.40875ms
+[debug] Load.apply: config.delegates took 1.576875ms
+[debug] Load.apply: Def.make(settings)... took 408.175959ms
+[debug] Load.apply: structureIndex took 63.673833ms
+[debug] Load.apply: mkStreams took 0.011334ms
+[info] set current project to addressappg2 (in build file:/Users/han/Documents/addressAppG2/addressAppG2/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(shell, None, None)
+[warn] sbt server could not start because there's another instance of sbt running on this build.
+[warn] Running multiple instances is unsupported
