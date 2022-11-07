@@ -59,6 +59,7 @@ class PersonOverviewController(
     val okClicked = MainApp.showPersonEditDialog(person);
     if (okClicked) {
       MainApp.personData += person
+      person.save()
     }
   }
   def handleEditPerson(action: ActionEvent) = {
@@ -66,7 +67,10 @@ class PersonOverviewController(
     if (selectedPerson != null) {
       val okClicked = MainApp.showPersonEditDialog(selectedPerson)
 
-      if (okClicked) showPersonDetails(Some(selectedPerson))
+      if (okClicked) {
+        showPersonDetails(Some(selectedPerson))
+        selectedPerson.save()
+      }
 
     } else {
       // Nothing selected.
@@ -81,7 +85,8 @@ class PersonOverviewController(
   def handleDeletePerson(action: ActionEvent) = {
     val selectedIndex = personTable.selectionModel().selectedIndex.value
     if (selectedIndex >= 0) {
-      personTable.items().remove(selectedIndex);
+      personTable.items().remove(selectedIndex).delete();
+
     }
   }
 

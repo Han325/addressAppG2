@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Mon Nov 07 13:13:00 MYT 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0184-5081-947a-00000d1a4788 
+on database directory /Users/han/Documents/addressAppG2/addressAppG2/myDB with class loader sun.misc.Launcher$AppClassLoader@7852e922 
+Loaded from file:/Users/han/Documents/addressAppG2/addressAppG2/target/bg-jobs/sbt_a2d5913b/target/4380d22b/d4f190b2/derby-10.12.1.1.jar
+java.vendor=Azul Systems, Inc.
+java.runtime.version=1.8.0_345-b01
+user.dir=/Users/han/Documents/addressAppG2/addressAppG2
+os.name=Mac OS X
+os.arch=aarch64
+os.version=13.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

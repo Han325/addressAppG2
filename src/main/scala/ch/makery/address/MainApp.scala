@@ -11,19 +11,24 @@ import ch.makery.address.model.Person
 import ch.makery.address.view.PersonEditDialogController
 import scalafx.scene.image.Image
 import scalafx.stage.{Modality, Stage}
+import ch.makery.address.util.Database
 
 object MainApp extends JFXApp {
   // the data as an observable list of Persons
   val personData = new ObservableBuffer[Person]()
-  personData += new Person("Hans", "Muster")
-  personData += new Person("Ruth", "Mueller")
-  personData += new Person("Heinz", "Kurz")
-  personData += new Person("Cornelia", "Meier")
-  personData += new Person("Werner", "Meyer")
-  personData += new Person("Lydia", "Kunz")
-  personData += new Person("Anna", "Best")
-  personData += new Person("Stefan", "Meier")
-  personData += new Person("Martin", "Mueller")
+  Database.setupDB()
+  //assign all person into personData array
+  personData ++= Person.getAllPersons
+
+  // personData += new Person("Hans", "Muster")
+  // personData += new Person("Ruth", "Mueller")
+  // personData += new Person("Heinz", "Kurz")
+  // personData += new Person("Cornelia", "Meier")
+  // personData += new Person("Werner", "Meyer")
+  // personData += new Person("Lydia", "Kunz")
+  // personData += new Person("Anna", "Best")
+  // personData += new Person("Stefan", "Meier")
+  // personData += new Person("Martin", "Mueller")
 
   // transform path of RootLayout.fxml to URI for resource location.
   val rootResource = getClass.getResourceAsStream("view/RootLayout.fxml")

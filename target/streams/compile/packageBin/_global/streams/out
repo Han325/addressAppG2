@@ -1,5 +1,11 @@
 [0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/han/Documents/addressAppG2/addressAppG2/target/scala-2.12/addressappg2_2.12-0.1.0-SNAPSHOT.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	images[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/han/Documents/addressAppG2/addressAppG2/target/scala-2.12/classes/images[0m
+[0m[[0m[0mdebug[0m] [0m[0m	images/contact.icns[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/han/Documents/addressAppG2/addressAppG2/target/scala-2.12/classes/images/contact.icns[0m
+[0m[[0m[0mdebug[0m] [0m[0m	images/address_book_32.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/han/Documents/addressAppG2/addressAppG2/target/scala-2.12/classes/images/address_book_32.png[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ch[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/han/Documents/addressAppG2/addressAppG2/target/scala-2.12/classes/ch[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ch/makery[0m
@@ -16,6 +22,10 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/han/Documents/addressAppG2/addressAppG2/target/scala-2.12/classes/ch/makery/address/util/DateUtil.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ch/makery/address/util/DateUtil$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/han/Documents/addressAppG2/addressAppG2/target/scala-2.12/classes/ch/makery/address/util/DateUtil$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ch/makery/address/util/Database.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/han/Documents/addressAppG2/addressAppG2/target/scala-2.12/classes/ch/makery/address/util/Database.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ch/makery/address/util/Database$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/han/Documents/addressAppG2/addressAppG2/target/scala-2.12/classes/ch/makery/address/util/Database$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ch/makery/address/MainApp$$anon$1$$anon$2.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/han/Documents/addressAppG2/addressAppG2/target/scala-2.12/classes/ch/makery/address/MainApp$$anon$1$$anon$2.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ch/makery/address/MainApp.class[0m
@@ -30,8 +40,14 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/han/Documents/addressAppG2/addressAppG2/target/scala-2.12/classes/ch/makery/address/model[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ch/makery/address/model/Person.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/han/Documents/addressAppG2/addressAppG2/target/scala-2.12/classes/ch/makery/address/model/Person.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ch/makery/address/model/Person$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/han/Documents/addressAppG2/addressAppG2/target/scala-2.12/classes/ch/makery/address/model/Person$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ch/makery/address/model/Person$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/han/Documents/addressAppG2/addressAppG2/target/scala-2.12/classes/ch/makery/address/model/Person$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ch/makery/address/view[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/han/Documents/addressAppG2/addressAppG2/target/scala-2.12/classes/ch/makery/address/view[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ch/makery/address/view/DarkTheme.css[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/han/Documents/addressAppG2/addressAppG2/target/scala-2.12/classes/ch/makery/address/view/DarkTheme.css[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ch/makery/address/view/PersonOverviewController$Controller.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/han/Documents/addressAppG2/addressAppG2/target/scala-2.12/classes/ch/makery/address/view/PersonOverviewController$Controller.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ch/makery/address/view/RootLayout.fxml[0m

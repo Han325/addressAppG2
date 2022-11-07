@@ -1,4 +1,7 @@
 [0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/han/Documents/addressAppG2/addressAppG2/src/main/resources/images/contact.icns,/Users/han/Documents/addressAppG2/addressAppG2/target/scala-2.12/classes/images/contact.icns)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/han/Documents/addressAppG2/addressAppG2/src/main/resources/images/address_book_32.png,/Users/han/Documents/addressAppG2/addressAppG2/target/scala-2.12/classes/images/address_book_32.png)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/han/Documents/addressAppG2/addressAppG2/src/main/resources/ch/makery/address/view/DarkTheme.css,/Users/han/Documents/addressAppG2/addressAppG2/target/scala-2.12/classes/ch/makery/address/view/DarkTheme.css)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	(/Users/han/Documents/addressAppG2/addressAppG2/src/main/resources/ch/makery/address/view/RootLayout.fxml,/Users/han/Documents/addressAppG2/addressAppG2/target/scala-2.12/classes/ch/makery/address/view/RootLayout.fxml)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	(/Users/han/Documents/addressAppG2/addressAppG2/src/main/resources/ch/makery/address/view/PersonEditDialog.fxml,/Users/han/Documents/addressAppG2/addressAppG2/target/scala-2.12/classes/ch/makery/address/view/PersonEditDialog.fxml)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	(/Users/han/Documents/addressAppG2/addressAppG2/src/main/resources/ch/makery/address/view/PersonOverview.fxml,/Users/han/Documents/addressAppG2/addressAppG2/target/scala-2.12/classes/ch/makery/address/view/PersonOverview.fxml)[0m
